@@ -1,39 +1,53 @@
-<html lang="ja">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Visualization (Scapegoat Tree)</title>
-    <script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js" integrity="sha256-98Q574VkbV+PkxXCKSgL6jVq9mrVbS7uCdA+vt0sLS8=" crossorigin="anonymous"></script>
+    <title>Visualização (Árvore Scapegoat)</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"
+      integrity="sha256-98Q574VkbV+PkxXCKSgL6jVq9mrVbS7uCdA+vt0sLS8="
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" type="text/css" href="../css/app.css" />
     <script type="text/javascript" src="../js/app-common.js"></script>
     <script type="text/javascript" src="../js/scapegoat-tree.js"></script>
   </head>
   <body>
     <div class="container">
-      <h1>Visualization (Scapegoat Tree)</h1>
-      <p>追加できるKeyの値の範囲は 0 ~ 999 です</p>
-      <p>各ノードは偏るほど輪郭が赤くなります</p>
+      <h1>Visualização (Árvore Scapegoat)</h1>
+      <p>O intervalo de valores possíveis para as chaves (Key) é de 0 a 999.</p>
+      <p>
+        Quanto mais desequilibrado o nó estiver, mais avermelhada será sua
+        borda.
+      </p>
       <div>
-        <span>alpha(0.5 ~ 1.0): </span>
-        <input class="alpha-value" type="text" placeholder="0.5 ~ 1.0 (default 0.7)" value="0.7" />
+        <span>alpha (0.5 ~ 1.0): </span>
+        <input
+          class="alpha-value"
+          type="text"
+          placeholder="0.5 ~ 1.0 (padrão 0.7)"
+          value="0.7"
+        />
       </div>
       <div class="query-component">
         <div>
           <input class="node-key" type="text" placeholder="0 ~ 999" />
-          <button class="add" type="button">追加/検索</button>
-          <button class="add-inc" type="button">+1追加/検索</button>
-          <button class="add-dec" type="button">-1追加/検索</button>
-          <button class="remove" type="button">削除</button>
+          <button class="add" type="button">Adicionar/Pesquisar</button>
+          <button class="add-inc" type="button">Adicionar/Pesquisar +1</button>
+          <button class="add-dec" type="button">Adicionar/Pesquisar -1</button>
+          <button class="remove" type="button">Remover</button>
         </div>
         <div>
-          <button class="add-random" type="button">ランダム追加/検索</button>
-          <button class="remove-random" type="button">ランダム削除</button>
+          <button class="add-random" type="button">
+            Adicionar/Pesquisar Aleatório
+          </button>
+          <button class="remove-random" type="button">Remover Aleatório</button>
         </div>
       </div>
       <div class="slider-component">
-        <span>アニメーション:</span>
+        <span>Animação:</span>
         <input type="range" class="anime-slider" />
       </div>
       <div>
@@ -43,14 +57,23 @@
         </svg>
       </div>
       <div>
-        <h3>参考</h3>
+        <h3>Referências</h3>
         <ul>
-          <li><a href="https://en.wikipedia.org/wiki/Scapegoat_tree">Scapegoat tree - Wikipedia</a></li>
-          <li><a href="https://topcoder.g.hatena.ne.jp/spaghetti_source/20120901/1346460700">Scapegoat Tree - 週刊 spaghetti_source</a></li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Scapegoat_tree"
+              >Árvore Scapegoat - Wikipedia</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://topcoder.g.hatena.ne.jp/spaghetti_source/20120901/1346460700"
+              >Árvore Scapegoat - Weekly spaghetti_source (em japonês)</a
+            >
+          </li>
         </ul>
       </div>
       <div>
-        <a href="../index.html">戻る</a>
+        <a href="../index.html">Voltar</a>
       </div>
     </div>
   </body>

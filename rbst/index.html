@@ -1,34 +1,42 @@
-<html lang="ja">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Visualization (Randomized Binary Search Tree)</title>
-    <script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js" integrity="sha256-98Q574VkbV+PkxXCKSgL6jVq9mrVbS7uCdA+vt0sLS8=" crossorigin="anonymous"></script>
+    <title>Visualização (Árvore Binária de Busca Randomizada)</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"
+      integrity="sha256-98Q574VkbV+PkxXCKSgL6jVq9mrVbS7uCdA+vt0sLS8="
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" type="text/css" href="../css/app.css" />
     <script type="text/javascript" src="../js/app-common.js"></script>
     <script type="text/javascript" src="../js/rbst.js"></script>
   </head>
   <body>
     <div class="container">
-      <h1>Visualization (Randomized Binary Search Tree)</h1>
-      <p>追加できるKeyの値の範囲は 0 ~ 999 です</p>
+      <h1>Visualização (Árvore Binária de Busca Randomizada)</h1>
+      <p>
+        O intervalo de valores que podem ser adicionados como chave é de 0 a 999
+      </p>
       <div class="query-component">
         <div>
           <input class="node-key" type="text" placeholder="0 ~ 999" />
-          <button class="add" type="button">追加/検索</button>
-          <button class="add-inc" type="button">+1追加/検索</button>
-          <button class="add-dec" type="button">-1追加/検索</button>
-          <button class="remove" type="button">削除</button>
+          <button class="add" type="button">Adicionar/Pesquisar</button>
+          <button class="add-inc" type="button">Adicionar/Pesquisar +1</button>
+          <button class="add-dec" type="button">Adicionar/Pesquisar -1</button>
+          <button class="remove" type="button">Remover</button>
         </div>
         <div>
-          <button class="add-random" type="button">ランダム追加/検索</button>
-          <button class="remove-random" type="button">ランダム削除</button>
+          <button class="add-random" type="button">
+            Adicionar/Pesquisar Aleatório
+          </button>
+          <button class="remove-random" type="button">Remover Aleatório</button>
         </div>
       </div>
       <div class="slider-component">
-        <span>アニメーション:</span>
+        <span>Animação:</span>
         <input type="range" class="anime-slider" />
       </div>
       <div>
@@ -38,14 +46,22 @@
         </svg>
       </div>
       <div>
-        <h3>参考</h3>
+        <h3>Referências</h3>
         <ul>
-          <li><a href="https://www.slideshare.net/iwiwi/2-12188757">プログラミングコンテストでのデータ構造 2　～平衡二分探索木編～</a></li>
-          <li>Martínez, Conrado, and Salvador Roura. "Randomized binary search trees." Journal of the ACM (JACM) 45.2 (1998): 288-323.</li>
+          <li>
+            <a href="https://www.slideshare.net/iwiwi/2-12188757"
+              >Estruturas de Dados em Competições de Programação 2 – Árvores
+              Binárias de Busca Balanceadas</a
+            >
+          </li>
+          <li>
+            Martínez, Conrado, e Salvador Roura. "Randomized binary search
+            trees." Journal of the ACM (JACM) 45.2 (1998): 288-323.
+          </li>
         </ul>
       </div>
       <div>
-        <a href="../index.html">戻る</a>
+        <a href="../index.html">Voltar</a>
       </div>
     </div>
   </body>
